@@ -48,9 +48,6 @@ const TodoComponent = () => {
    }
 
   return (
-    
-      
-        
           <div className="c1">
             <h1>Daily Goals !</h1>
             <div class='c3'>
@@ -65,17 +62,13 @@ const TodoComponent = () => {
               Add Todo 
             </button>
             </div>
-            
-
             <ul className="ul1">
               {todoList.map((todo) => (
                 <li
                   key={todo.uniqueNo}
                   className="l1"
-                >
-                  
-                  
-                    <label
+                >   
+                  <label
                       className="la1"
                     >
                       {todo.text}
@@ -88,12 +81,8 @@ const TodoComponent = () => {
               ))}
             </ul>
             </div>
-            
-
           </div>
-        
-      
-    
+
   );
 };
 
